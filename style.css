@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+#main {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 22.5% 35% 20% 32.5%;
+    grid-template-rows: 100%;
+}
+
+#ranking {
+    grid-column: 2;
+    /* background-color: white; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5% 18% 18% 18% 18% 18% 5%;
+    grid-template-columns: 10% 30% 60%;
+    grid-row: 1;
+}
+
+#nextPick {
+    grid-column: 3;
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 30% 7% 14% 29%;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+img {
+    width: 15vh;
+    height: 15vh;
+    justify-self: center;
+    align-self: center;
+    grid-column: 2;
+    border: 0.25vh solid white;
+}
+
+.ranks {
+    align-self: center;
+    color: white;
+    grid-column: 3;
+    margin-left: 5%;
+}
+
+.rankNum {
+    align-self: center;
+    color: white;
+    grid-column: 1;
+    justify-self: end;
+    font-size: 4vh;
+}
+
+#pick {
+    grid-row: 2;
+    width: 25vh;
+    height: 25vh;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1;
+
+}
+
+.dragging {
+    opacity: 1;
+}
+
+#pickName {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    align-self: center;
+    margin-left: 0;
+    color: white;
+}
+
+#rankButtons {
+    /* background-color: green; */
+    color: white;
+    grid-row: 4;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+#topRow {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+}
+
+#botRow {
+    grid-template-rows: 100%;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+}
+
+.rowButton {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+span {
+    user-select: none;
+    display: flex;
+    background-color: rgb(71, 71, 71);
+    width: 5vh;
+    height: 5vh;
+    justify-content: center;
+    border-radius: 1vh;
+    filter: drop-shadow(0.4vh 0.4vh grey);
+    transition: ease-in-out 250ms all;
+}
+
+span:hover {
+    filter: none;
+    transform: translate(0.4vh, 0.4vh);
+}
+
+#but1 {
+    grid-column: 2;
+}
+
+#but2 {
+    grid-column: 3;
+}
+
+#but3 {
+    grid-column: 4;
+}
+
+#but4 {
+    grid-column: 3;
+}
+
+#but5 {
+    grid-column: 4;
+}
