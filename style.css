@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Poppins;
+    overflow: hidden;
 }
 
 #main {
@@ -11,7 +12,10 @@
     display: grid;
     grid-template-columns: 22.5% 35% 20% 32.5%;
     grid-template-rows: 100%;
+
 }
+
+
 
 #ranking {
     grid-column: 2;
@@ -144,4 +148,75 @@ span:hover {
 
 #but5 {
     grid-column: 4;
+}
+
+@media screen and (max-width: 600px) {
+    #main {
+        grid-template-columns: 10% 80% 10% ;
+        grid-template-rows: 75% 25%;
+    }
+
+    #ranking {
+        grid-column: 2;
+        grid-template-columns: 10% 25% 65%;
+    }
+
+    .rankNum {
+        justify-self: start;
+        font-size: 4vh;
+    }
+
+    #nextPick {
+        grid-column: 1/4;
+        grid-row: 2;
+        grid-template-rows: 100%;
+        grid-template-columns: 10% 25% 65%;
+    }
+
+    .rowButton {
+        display: none;
+    }
+
+    img {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    #pick {
+        width: 13vh;
+        height: 13vh;
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #pickName {
+        font-size: 3vh;
+        grid-row: 1;
+        grid-column: 3;
+        justify-self: start;
+        margin-left: 10%;
+    }
+
+    .ranks {
+        font-size: 3vh;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 601px) {
+    #main {
+        grid-template-columns: 10% 45% 35% 10%;
+    }
+
+    #nextPick {
+        grid-template-rows: 20% 30% 7% 18% 20%;
+    }
+
+    .but {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    .rankNum {
+        font-size: 5vh;
+    }
 }
