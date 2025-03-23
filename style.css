@@ -211,6 +211,15 @@ span:hover {
         grid-template-rows: 20% 30% 7% 18% 20%;
     }
 
+    #ranking {
+        grid-template-rows: 0% 18% 18% 18% 18% 18% 5%;
+    }
+
+    img {
+        width: 13.5vh;
+        height: 13.5vh;
+    }
+
     .but {
         width: 6vh;
         height: 6vh;
