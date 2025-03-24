@@ -23,7 +23,7 @@ function chooseRandomRappers() {
     randomRapperIndex = removeDuplicates(randomRapperIndex)
 
     while(removeDuplicates(randomRapperIndex).length !== 5) {
-        randomRapperIndex.push(Math.floor(Math.random() * 126))
+        randomRapperIndex.push(Math.floor(Math.random() * 127))
     }
 
     for(j=0;j<randomRapperIndex.length;j++) {
