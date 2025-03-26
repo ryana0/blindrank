@@ -17,7 +17,7 @@ function chooseRandomRappers() {
     randomRapperIndex = []
 
     for(i=0;i<5;i++) {
-        randomRapperIndex.push(Math.floor(Math.random() * 126))
+        randomRapperIndex.push(Math.floor(Math.random() * 127))
     }
 
     randomRapperIndex = removeDuplicates(randomRapperIndex)
